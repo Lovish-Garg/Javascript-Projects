@@ -1,0 +1,39 @@
+*
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #17312e;
+}
+
+.container button
+{
+	height: auto;
+	width: 12vw;
+	padding: 10px 10px;
+	border: none;
+	background-color: #000;
+	color: #fff;
+	font-size: 1.9rem;
+	font-family: cursive;
+	outline: none;
+}
+
+button:hover
+{
+	background-color: green;
+}
+
+button:active
+{
+	color: #333;
+}
