@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,100&display=swap');
+
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family: cursive;
+	box-sizing: border-box;
+}
+
+body
+{
+	color: white;
+	background-image: url('Images/bg.jpg');
+}
+
+.container
+{
+	width: 100%;
+	height: 100vh;
+}
+
+.container button
+{
+	outline: none;
+	border: none;
+}
+
+.box
+{
+	background-color: rgba(43, 43, 43, 0.7);
+	width: 54%;
+	border: 2px solid white;
+	outline: 2vw solid grey;
+}
+
+.box button
+{
+	align-self: center;
+	margin: 10px 0;
+	padding: 20px 40px;
+	font-size: 2vw;
+	font-family: sans-serif;
+	background-image: linear-gradient(40deg, white, white, grey, grey, grey, white, white); 	
+	color: white;
+	font-family: serif;
+	border-radius: 8px;
+}
+
+button:hover
+{
+	box-sizing: border-box;
+	border: 4px solid white;
+}
+
+.container .flex
+{
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.box p
+{
+	width: 100%;
+	padding-left: 40px;
+	font-size: 2vw;
+	padding-bottom: 30px;
+	font-family: 'Grandstander', cursive;
+}
+
+.flex
+{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	flex-direction: column;
+}
