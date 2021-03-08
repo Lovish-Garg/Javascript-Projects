@@ -1,0 +1,91 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family: cursive;
+	box-sizing: border-box;
+}
+
+.container::before
+{
+	content: '';
+	background-image: url('Images/bg.jpg');
+	background-size: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	z-index: -1;
+}
+
+.container
+{
+	z-index: 0;
+	position: relative;
+	width: 80%;
+	height: 100vh;
+	display: block;
+	background-color: #e1e1e1;
+	margin: auto;
+}
+
+.container .box
+{
+	position: relative;
+	color: #fff;
+	width: 40%;
+	border: 10px solid rgba(255, 255, 255, 0.6);
+	height: 80%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container .box #heading
+{
+	position: absolute;
+	padding-top: 20px;
+	top: 0;
+}
+
+.container .box #count
+{
+	font-family: sans-serif;
+	font-size: 7vw;
+	padding: 10vh 0;
+}
+
+.container button
+{
+	cursor: pointer;
+	padding: 0 10px;
+	font-size: 2vw;
+	margin-bottom: 10px;
+
+	min-width: 24%;
+	min-height: 13%;
+
+	background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);	
+	border: none;
+	outline: none;
+	transition-property: background-image;
+	transition-duration: 2s;
+	border-radius: 4px;
+}
+
+.container button:hover
+{
+	transform: scale(0.98);
+	background-image: linear-gradient(to right, #b48ee2, #009fff);
+}
+
+.container button:active
+{
+	color: #333;
+}
+
+.flex
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+}
