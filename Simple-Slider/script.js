@@ -6,7 +6,7 @@ const carImages =
 	'car3.jpg',
 ];
 
-const path = '\\C:\\Users\\lovis\\Pictures\\Images\\Cars\\';
+const path = 'Images\\';
 
 const btnLeft = document.querySelector('.icon-left');
 const btnRight = document.querySelector('.icon-right');
