@@ -1,4 +1,4 @@
-const mainPath = '/C:/Users/lovis/Pictures/Images/';
+const mainPath = 'Images/';
 const imageType = '.jpg';
 const images = [
 	'car1',
