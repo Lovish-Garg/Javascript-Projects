@@ -1,0 +1,97 @@
+:root
+{
+	--mainWhite: #f2fdff;
+	--mainBlue: #3e92cc;
+}
+
+.container
+{
+	width: 50vw;
+	border: 10px solid #bfdaaa;
+	min-height: 400px;
+	margin: 60px auto;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.icon-left, .icon-right
+{
+	z-index: 1;
+	font-size: 1.2rem;
+	position: absolute;
+	display: inline-block;
+	border-radius: 50%;
+	width: 50px;
+	padding: 12px 0;
+	text-align: center;
+	background-color: var(--mainBlue);
+	border: 0.2rem solid var(--mainBlue);
+	transition: .3s all;
+}
+
+.icon-left:hover, .icon-right:hover
+{
+	box-shadow: 0px 0px 20px 2px var(--mainBlue);
+}
+
+.img-container
+{
+	overflow: hidden;
+	width: 100%;
+	max-height: 100%;
+}
+
+.img-container img
+{
+	max-width: 100%;
+}
+
+.animation
+{
+	animation: zoom .6s ease;
+}
+
+@keyframes zoom
+{
+	0%
+	{
+		transform: scale(2); opacity: 0;
+	}
+
+	100%
+	{
+		transform: scale(1); opacity: 1;
+	}
+}
+
+a
+{
+	color: white;
+}
+
+.icon-left
+{
+	right: 97.5%;
+}
+
+.icon-right
+{
+	left: 97.5%;
+}
+
+.icon-left:hover a, .icon-right:hover a
+{
+	color: var(--mainBlue);
+}
+
+.icon-left:hover, .icon-right:hover
+{
+	background-color: var(--mainWhite);
+}
+
+div[class ^= 'icon']
+{
+	cursor: pointer;
+}
