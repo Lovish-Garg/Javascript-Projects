@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<title>Sidebar</title>
+</head>
+<body>
+	<div class="sidebar">
+		<i class="fas fa-bars bars" onclick="toggle()"></i>
+		<div class="logo-img-container">
+			<img src="Images/car2.jpg" alt="">
+			<h4>Lovish Garg</h4>
+		</div>
+		<ul>
+			<li>
+				<a href="#" id="active">
+					<span class="icon">
+					<i class="fas fa-home"></i></span>
+					<span class="title">Home</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<span class="icon"><i class="far fa-id-badge"></i></span>
+					<span class="title">Profile</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<span class="icon"><i class="fas fa-bell"></i></span>
+					<span class="title">Notifications</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<span class="icon"><i class="far fa-address-card"></i></span>
+					<span class="title">About</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+					<span class="title">Signout</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="background-img">
+	</div>
+	<script>
+		const sidebar = document.querySelector('.sidebar');
+		const bar = document.querySelector('.bars');
+
+		function toggle ()
+		{
+			sidebar.classList.toggle('active-sidebar');
+			bar.classList.toggle('left-more');
+		}
+	</script>
+</body>
+</html>
