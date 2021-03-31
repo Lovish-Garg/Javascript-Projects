@@ -1,0 +1,463 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+html
+{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('Images/astronaut1.jpg') no-repeat fixed;
+	background-size: cover;
+	z-index: -1;
+}
+
+/*Here my header code starts*/
+header
+{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+ul
+{
+	margin: 0 1rem;
+}
+
+nav ul
+{
+	list-style: none;
+}
+
+nav li a
+{
+	text-decoration: none;
+	margin: 0 1rem;
+	color: #fff;
+	font-size: 1rem;
+}
+
+nav li a:hover
+{
+	border-bottom: 1px solid #fff;
+}
+
+/*Here my header code ends*/
+
+/*Here my main-section code starts*/
+.main-section
+{
+	min-height: 100vh;
+	width: 70%;
+	color: #fff;
+	margin: auto;
+}
+
+.main-section p
+{
+	font-size: 1.3rem;
+	text-shadow: 1px 0 10px #aaa;
+}
+
+.main-section p, .main-section h2
+{
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+.main-section h2
+{
+	margin-top: 2rem;
+}
+
+.main-section.flex
+{
+	flex-direction: column;
+}
+
+section:last-child
+{
+	font-size: 2rem;
+}
+
+section i
+{
+	font-size: 3rem;
+	color: #fff;
+	margin-bottom: 2rem;
+}
+
+#main-text
+{
+	font-size: 3rem;
+	color: #fff;
+	text-align: center;
+}
+
+.scroll-effect, .right-side
+{
+	width: 80%;
+	color: #fff;
+	padding: 1rem 2rem;
+	opacity: 0;
+	transform: translateX(-10%);
+	transition: all .5s ease-in-out 1.2s;
+	margin: 0 auto;
+	margin-bottom: 10rem;
+}
+
+.right-side
+{
+	transform: translateX(10%);
+}
+
+.scroll-effect.grid
+{
+	grid-template-areas: 'pic description';
+}
+
+.right-side.grid
+{
+	grid-template-areas: 'destination pic';
+}
+
+.left-side-scroll, .right-side .left-side-scroll
+{
+	grid-area: pic;
+	background: url('Images/car1.jpg') no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 30% 70%;
+	border-radius: 8px;
+	margin: 0 2rem;
+	min-height: 320px;
+	min-width: 500px;
+}
+
+.right-side .left-side-scroll
+{
+	background: url('Images/car2.jpg') no-repeat;
+	background-position: 40% 40%;
+	background-size: cover;
+}
+
+.active
+{
+	opacity: 1;
+	transform: translateX(0);
+}
+.description p
+{
+	grid-area: description;
+	font-size: 1.1rem;
+}
+/*Here my main-section code ends*/
+/*here my contact-section code starts */
+#contact
+{
+	text-align: center;
+	font-size: 3rem;
+	color: #fff;
+}
+.contact-us
+{
+	width: 100%;
+	min-width: 100%;
+	color: #fff;
+}
+
+/*here my form code starts*/
+.break-wrap
+{
+	margin-bottom: 3rem;
+}
+
+.info-container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+}
+
+.info-container p
+{
+	font-size: 1.2rem;
+}
+
+label
+{
+	margin: 1rem 0;
+	font-size: 1rem;
+}
+
+label[id$='text']
+{
+	display: block;
+}
+
+input
+{
+	font-family: sans-serif;
+	font-weight: 200;
+	padding:.3rem .6rem;
+	font-size: 1.1rem;
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+}
+
+input[type='email'], input[type='text']
+{
+	width: 90%;
+}
+
+.select-container-wrap
+{
+	position: relative;
+	width: 140px;
+}
+
+select
+{
+	display: inline-block;
+	font-size: 1rem;
+	background-color: transparent;
+	color: #fff;
+	width: 100%;
+	border: none;
+	border-left: 1px solid #fff;
+	position: relative;
+}
+
+input[type='submit']
+{
+	display: block;
+	padding: 5px 10px;
+	width: 70%;
+	color: var(--main-white);
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #eee;
+	margin: auto;
+	transition: transform .1s linear;
+}
+
+input[type='submit']:hover, input[type='submit']:active
+{
+	transform: scale(1.1);
+}
+
+input[type='submit']:active
+{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+/*here my contact-section code ends*/
+
+/*Footer starts here*/
+footer
+{
+	margin-top: 5rem;
+	width: 100%;
+	height: auto;
+	background-color: #020019;
+	color: #fff;
+}
+
+footer .grid
+{
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 'web nav' 'follow nav';
+	padding: 4rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.website
+{
+	display: flex;
+	flex-direction: column;
+	padding-left: 3rem;
+	grid-area: web;
+	margin: 1rem 0;
+}
+
+footer nav
+{
+	margin: 1rem 0;
+	grid-area: nav;
+}
+
+footer .social
+{
+	margin: 1rem 0;
+	grid-area: follow;
+}
+
+footer .social a i
+{
+	font-size: 1.9rem;
+}
+
+footer .social a:hover
+{
+	color: #bbb;
+}
+
+.social.flex
+{
+	justify-content: flex-start;
+}
+
+footer nav ul.flex
+{
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-left: 30%;
+}
+
+footer .social a{
+	color: #fff;
+	transition: .3s;
+	margin: 0 1rem;
+}
+/*footer*/
+
+/*Utilities*/
+.flex
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 1321px)
+{
+	.scroll-effect.grid
+	{
+		grid-template-areas: 'pic' 'description';
+		grid-template-rows: auto 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	.right-side .left-side-scroll
+	{
+		background-position: 20% 70%;
+	}
+
+	.left-side-scroll
+	{
+		background-position: 30% 70%;
+	}
+}
+
+@media only screen and (max-width: 661px)
+{
+	.contact-us.grid
+	{
+		grid-template-columns: 1fr;
+
+	}
+
+	form
+	{
+		padding: 0 5rem;
+	}
+
+	.scroll-effect
+	{
+		transform: translate(-10%);
+	}
+
+	.right-side
+	{
+		transform: translate(2%);
+	}
+}
+
+@media only screen and (max-width: 469px)
+{
+	footer .grid
+	{
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: 'web' 'nav' 'follow';
+	}
+
+	footer nav ul.flex
+	{
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-left: 2rem;
+	}
+
+	.social
+	{
+		padding-left: 2rem;
+	}
+	html
+	{
+		font-size: 15px;
+	}
+
+	.left-side-scroll, .right-side .left-side-scroll
+	{
+		margin: 0;
+	}
+
+	.right-side .left-side-scroll, .left-side-scroll
+	{
+		max-width: 100%;
+		max-height: 100%;
+		min-height: 180px;
+		min-width: 300px;
+		background-position: 40% 70%;
+		margin-bottom: 1rem;
+	}
+
+	.grid
+	{
+		grid-gap: 0rem 1rem;
+	}
+
+	.scroll-effect, .right-side
+	{
+		padding: 1rem 0;
+	}
+}
+
+@media only screen and (max-width: 619px)
+{
+	footer .grid
+	{
+		grid-template-columns: 1fr .8fr;
+		padding: .5rem;
+	}
+}
+
+@media only screen and (max-width: 362px)
+{
+
+}
